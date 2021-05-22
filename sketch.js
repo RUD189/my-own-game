@@ -200,7 +200,7 @@ function setup() {
     boy.debug = false;
     score = score + Math.round(getFrameRate()/60);
 
-    backGround.velocityX = -11;
+    backGround.velocityX = -15;
 
     if(backGround.x < windowWidth/2-1910){
         backGround.x = width/2 + 1900;
@@ -335,7 +335,7 @@ function setup() {
     
 
     if(score > 0 && score % 500 === 0){
-      bunch.velocityX = -11;
+      bunch.velocityX = -15;
     }
    
     if(bunch.x < windowWidth/2 - 1100){
@@ -560,7 +560,7 @@ if(dog.isTouching(boy)){
     if(frameCount % 350 === 0){
       bench = createSprite(width/2 + 1100,height/2 + 275);
       bench.addImage("bench",benchImg);
-      bench.velocityX = -11; 
+      bench.velocityX = -15; 
       bench.setCollider("rectangle",0,0,150,80,0);
       bench.debug = false;
       bench.scale = 0.24;
@@ -575,7 +575,7 @@ if(dog.isTouching(boy)){
       waterPump.debug = false;
       waterPump.setCollider("rectangle",0,0,50,70,0);
      waterPump.addImage("pump",waterPumpImg);
-      waterPump.velocityX =-11; 
+      waterPump.velocityX =-15; 
       waterPump.scale = 1.2;
       waterPumpGroup.add(waterPump);
     }
@@ -584,7 +584,7 @@ if(dog.isTouching(boy)){
     if(frameCount % 350 === 0){
       tyres = createSprite(bench.x + 2800,height/2 + 275);
       tyres.addImage("tyres",tyresImg);
-      tyres.velocityX = -11;  
+      tyres.velocityX = -15;  
       tyres.scale = 0.9;
       tyres.debug = false;
       tyres.setCollider("rectangle",10,0,100,120,0);
@@ -601,7 +601,7 @@ function spawnbBalloon(){
     bBalloon = createSprite(width/2 + 1200,height);
     bBalloon.addAnimation("blue",bBalloonImg);
     bBalloon.y = Math.round(random(height/2 - 70,height/2 + 90))
-    bBalloon.velocityX = -11; 
+    bBalloon.velocityX = -15; 
     bBalloon.scale = 1.1;
     bBalloon.velocityY = -0.1;
     bBalloon.debug = false;
@@ -621,7 +621,7 @@ function spawnrBalloon(){
     rBalloon = createSprite(width/2 + 1200,height);
     rBalloon.addAnimation("red",rBalloonImg);
     rBalloon.y = Math.round(random(height/2 - 70,height/2 + 90))
-    rBalloon.velocityX = -11; 
+    rBalloon.velocityX = -15; 
     rBalloon.scale = 1.1;
     rBalloon.velocityY = -0.1;
     rBalloon.debug = false;
@@ -641,7 +641,7 @@ function spawngBalloon(){
     gBalloon = createSprite(width/2 + 1200,height);
     gBalloon.addAnimation("blue",gBalloonImg);
     gBalloon.y = Math.round(random(height/2 - 70,height/2 + 90))
-    gBalloon.velocityX = -11; 
+    gBalloon.velocityX = -15; 
     gBalloon.scale = 1.1;
     gBalloon.debug = false;
     gBalloon.setCollider("circle",0,0,20);
